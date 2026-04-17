@@ -67,7 +67,7 @@ def maybe_compile(fn: Optional[F] = None, **compile_kwargs: Any) -> Any:
                 )
                 return func
         logger.info(
-            "Triton not available — skipping torch.compile for %s "
+            "Triton not available — skipping torch.compile for {} "
             "(inference will use native PyTorch kernels)",
             func.__qualname__,
         )
